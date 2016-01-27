@@ -6,12 +6,11 @@ HTTP Server application for viewing GitHub Flavored Markdown
 ## Usage
 
 ```
-python app.py
+$ python app.py
 ```
 
-You can open your browser to http://127.0.0.1:5000/
-
-If you want to see src.md, place src.md in `md` directory. And then you can open http://127.0.0.1:5000/src
+You can open your browser to http://127.0.0.1:5000/ .
+If you want to see src.md, place src.md in `md` directory. And then you can open http://127.0.0.1:5000/src .
 
 ## Requirement
 
@@ -23,7 +22,9 @@ If you want to see src.md, place src.md in `md` directory. And then you can open
 ## Install
 
 ```
-pip install -r requirements.txt
+$ git clone https://github.com/akimacho/py-mdviewr.git
+$ cd py-mdviewr
+$ pip install -r requirements.txt
 ```
 
 ## Licence
