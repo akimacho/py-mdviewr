@@ -1,5 +1,6 @@
 #!usr/bin/env python
 import os
+import argparse
 import markdown
 from flask import Flask
 from flask import abort
@@ -31,4 +32,15 @@ def md_file(filename):
         abort(404)
 
 if __name__ == '__main__':
-    app.run()
+    parser = argparse.ArgumentParser(description='This script is HTTP Server application for viewing GitHub Flavored Markdown')
+    parser.add_argument('-p', '--port', \
+        action='store', \
+        nargs='?', \
+        const=None, \
+        default=None, \
+        type=int, \
+        choices=None, \
+        help='port number', \
+        metavar=None)
+    args = parser.parse_args()
+    app.run(port = args.port)
