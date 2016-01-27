@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## Licence
 
-[MIT]()
+[MIT](https://github.com/akimacho/py-mdviewr/blob/master/LICENSE)
 
 ## Author
 
